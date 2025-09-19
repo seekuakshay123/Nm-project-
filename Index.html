@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akshay.P | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin: 10px 0;
+    }
+    nav button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background: #444;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background: #666;
+    }
+    #content {
+      padding: 20px;
+      background: #fff;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Akshay.P</h1>
+    <p>BCA Student | Music & Art Enthusiast</p>
+    <nav>
+      <button onclick="loadHome()">Home</button>
+      <button onclick="loadAbout()">About</button>
+      <button onclick="loadProjects()">Projects</button>
+      <button onclick="loadContact()">Contact</button>
+    </nav>
+  </header>
+
+  <div id="content">
+    <!-- Content will be loaded dynamically -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Akshay.P</p>
+  </footer>
+
+  <script>
+    function loadHome() {
+      document.getElementById("content").innerHTML = `
+        <h2>Home</h2>
+        <p>Hello! I'm <b>Akshay.P</b>, a 19-year-old BCA student from Palakkad, Patripala. 
+        I love coding, listening to music, and drawing. Welcome to my personal portfolio website!</p>
+      `;
+    }
+
+    function loadAbout() {
+      document.getElementById("content").innerHTML = `
+        <h2>About Me</h2>
+        <p><b>Name:</b> Akshay.P</p>
+        <p><b>Age:</b> 19</p>
+        <p><b>Place:</b> Palakkad, Patripala (near Ottapalam)</p>
+        <p><b>Education:</b> BCA Student</p>
+        <p><b>Hobbies:</b> Listening to music, Drawing</p>
+      `;
+    }
+
+    function loadProjects() {
+      document.getElementById("content").innerHTML = `
+        <h2>Projects</h2>
+        <ul>
+          <li><b>Portfolio Website:</b> A responsive personal website built with HTML, CSS, and JavaScript.</li>
+          <li><b>To-Do App:</b> A simple web app to manage daily tasks.</li>
+          <li><b>Calculator:</b> A basic calculator created using JavaScript.</li>
+        </ul>
+      `;
+    }
+
+    function loadContact() {
+      document.getElementById("content").innerHTML = `
+        <h2>Contact</h2>
+        <p>Email: akshay@example.com</p>
+        <p>Phone: +91 9876543210</p>
+      `;
+    }
+
+    // Load Home by default
+    loadHome();
+  </script>
+</body>
+</html>
+
+
+---
+
+✅ This version now includes your name, age, place, education, hobbies, and projects.
+Do you also want me to add a profile photo section (you can later replace with your image file) inside the Home/About page?
